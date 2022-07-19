@@ -1,11 +1,11 @@
 properties: https://www.monopolyland.com/monopoly-squares/
 colors: 
-cchest cards: 
-chacne cards: 
+comm. chest cards:
+chance cards:
 - logic
   - how to track wallets
   - how to track bank/inventories
-  - how to tracek rents (houses/hotels) 
+  - how to track rents (houses/hotels)
   - how to track "penalty" (tax, free parking) 
   
  
