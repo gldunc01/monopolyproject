@@ -41,11 +41,44 @@ def get_property(name):
 def get_user_balance(user):
     ...
 
+"""
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 
 def main():
     properties = {
             "Mediterranean Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Comm Chest_0": {
                 "purchase_price": 60,
                 "position": 60,
                 "rent": 60,
@@ -69,7 +102,15 @@ def main():
                 "tax": False,
                 "action": None
             },
-            "Baltic Avenue": {
+            "Oriental Avenue":  {
+                    "purchase_price": 60,
+                    "position": 60,
+                    "rent": 60,
+                    "owner": 60,
+                    "tax": False,
+                    "action": None
+                },
+            "Chance_0": {
                 "purchase_price": 60,
                 "position": 60,
                 "rent": 60,
@@ -77,7 +118,7 @@ def main():
                 "tax": False,
                 "action": None
             },
-            "Baltic Avenue": {
+            "Vermont Avenue": {
                 "purchase_price": 60,
                 "position": 60,
                 "rent": 60,
@@ -85,7 +126,7 @@ def main():
                 "tax": False,
                 "action": None
             },
-            "Baltic Avenue": {
+            "Connecticut Avenue": {
                 "purchase_price": 60,
                 "position": 60,
                 "rent": 60,
@@ -93,7 +134,7 @@ def main():
                 "tax": False,
                 "action": None
             },
-            "Baltic Avenue": {
+            "Jail": {
                 "purchase_price": 60,
                 "position": 60,
                 "rent": 60,
@@ -101,7 +142,7 @@ def main():
                 "tax": False,
                 "action": None
             },
-            "Baltic Avenue": {
+        "St. Charles Place": {
                 "purchase_price": 60,
                 "position": 60,
                 "rent": 60,
@@ -109,7 +150,7 @@ def main():
                 "tax": False,
                 "action": None
             },
-            "Baltic Avenue": {
+            "Electric Company": {
                 "purchase_price": 60,
                 "position": 60,
                 "rent": 60,
@@ -117,7 +158,7 @@ def main():
                 "tax": False,
                 "action": None
             },
-            "Baltic Avenue": {
+            "Virginia Avenue": {
                 "purchase_price": 60,
                 "position": 60,
                 "rent": 60,
@@ -126,8 +167,200 @@ def main():
                 "action": None
             },
 
+            "Pennsylvania RR": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "St. James Place": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+        "Comm Chest_2": {
+            "purchase_price": 60,
+            "position": 60,
+            "rent": 60,
+            "owner": 60,
+            "tax": False,
+            "action": None
+        },
+            "Tennessee Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "New York Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Kentucky Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+        "Chance_2": {
+            "purchase_price": 60,
+            "position": 60,
+            "rent": 60,
+            "owner": 60,
+            "tax": False,
+            "action": None
+        },
+        "Indiana Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Illinois Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "B&O RR": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Atlantic Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Ventnor Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Water Works": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Marvin Gardens": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Pacific Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "North Carolina Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+        "Comm Chest_3": {
+            "purchase_price": 60,
+            "position": 60,
+            "rent": 60,
+            "owner": 60,
+            "tax": False,
+            "action": None
+        },
+            "Pennsylvania Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Short Line": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+        "Chance_3": {
+            "purchase_price": 60,
+            "position": 60,
+            "rent": 60,
+            "owner": 60,
+            "tax": False,
+            "action": None
+        },
 
+        "Park Place": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "Luxury_tax": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+        "Boardwalk": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
 
+            "Income_Tax": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": 60,
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
 
 
     }
