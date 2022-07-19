@@ -72,8 +72,8 @@ def main():
     properties = {
             "Mediterranean Avenue": {
                 "purchase_price": 60,
-                "position": 60,
-                "rent": 60,
+                "position": 1,
+                "rent": [2, 10, 30, 90, 160, 250], # based on house count, -2 = hotel, -1 = mortgage [0 houses, 1 houses, ...]
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -81,7 +81,7 @@ def main():
             "Comm Chest_0": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [4, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -89,7 +89,7 @@ def main():
             "Baltic Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [4, 20, 60, 180, 320, 450, 30],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -97,7 +97,7 @@ def main():
             "Reading RR": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -105,7 +105,7 @@ def main():
             "Oriental Avenue":  {
                     "purchase_price": 60,
                     "position": 60,
-                    "rent": 60,
+                    "rent": [6, 30, 90, 270, 400, 550, 50],
                     "owner": 60,
                     "tax": False,
                     "action": None
@@ -113,7 +113,7 @@ def main():
             "Chance_0": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -121,7 +121,7 @@ def main():
             "Vermont Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [6, 30, 90, 270, 400, 550, 50],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -129,7 +129,7 @@ def main():
             "Connecticut Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [8, 40, 100, 300, 450, 600, 60],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -137,7 +137,7 @@ def main():
             "Jail": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -145,7 +145,7 @@ def main():
         "St. Charles Place": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [10, 50, 150, 450, 625, 750, 70],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -153,7 +153,15 @@ def main():
             "Electric Company": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
+                "owner": 60,
+                "tax": False,
+                "action": None
+            },
+            "States Avenue": {
+                "purchase_price": 60,
+                "position": 60,
+                "rent": [10, 50, 150, 450, 625, 750, 70],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -161,7 +169,7 @@ def main():
             "Virginia Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [12, 60, 180, 500, 700, 900, 80],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -170,7 +178,7 @@ def main():
             "Pennsylvania RR": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -178,7 +186,7 @@ def main():
             "St. James Place": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [14, 70, 200, 550, 750, 950, 90],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -186,7 +194,7 @@ def main():
         "Comm Chest_2": {
             "purchase_price": 60,
             "position": 60,
-            "rent": 60,
+            "rent": [5, 20, 60, 180, 320, 450],
             "owner": 60,
             "tax": False,
             "action": None
@@ -194,7 +202,7 @@ def main():
             "Tennessee Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [14, 70, 200, 550, 750, 950, 90],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -202,7 +210,7 @@ def main():
             "New York Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [16, 80, 220, 600, 800, 1000, 100],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -210,7 +218,7 @@ def main():
             "Kentucky Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [18, 90, 250, 700, 875, 1050, 110],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -218,7 +226,7 @@ def main():
         "Chance_2": {
             "purchase_price": 60,
             "position": 60,
-            "rent": 60,
+            "rent": [5, 20, 60, 180, 320, 450],
             "owner": 60,
             "tax": False,
             "action": None
@@ -226,7 +234,7 @@ def main():
         "Indiana Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [18, 90, 250, 700, 875, 1050, 110],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -234,7 +242,7 @@ def main():
             "Illinois Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [20, 100, 300, 750, 925, 1100, 120],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -242,7 +250,7 @@ def main():
             "B&O RR": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -250,7 +258,7 @@ def main():
             "Atlantic Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [22, 110, 330, 800, 975, 1150, 130],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -258,7 +266,7 @@ def main():
             "Ventnor Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [22, 110, 330, 800, 975, 1150, 130],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -266,7 +274,7 @@ def main():
             "Water Works": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -274,7 +282,7 @@ def main():
             "Marvin Gardens": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [24, 120, 360, 850, 1025, 1200, 140],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -282,7 +290,7 @@ def main():
             "Pacific Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [26, 130, 390, 900, 1100, 1275, 150],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -290,7 +298,7 @@ def main():
             "North Carolina Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [26, 130, 390, 900, 1100, 1275, 150],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -298,7 +306,7 @@ def main():
         "Comm Chest_3": {
             "purchase_price": 60,
             "position": 60,
-            "rent": 60,
+            "rent": [5, 20, 60, 180, 320, 450],
             "owner": 60,
             "tax": False,
             "action": None
@@ -306,7 +314,7 @@ def main():
             "Pennsylvania Avenue": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [28, 150, 450, 1000, 1200, 1400, 160],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -314,7 +322,7 @@ def main():
             "Short Line": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -322,7 +330,7 @@ def main():
         "Chance_3": {
             "purchase_price": 60,
             "position": 60,
-            "rent": 60,
+            "rent": [5, 20, 60, 180, 320, 450],
             "owner": 60,
             "tax": False,
             "action": None
@@ -331,7 +339,7 @@ def main():
         "Park Place": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [35, 175, 500, 1100, 1300, 1500, 175],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -339,7 +347,7 @@ def main():
             "Luxury_tax": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -347,7 +355,7 @@ def main():
         "Boardwalk": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [50, 200, 600, 1400, 1700, 2000, 200],
                 "owner": 60,
                 "tax": False,
                 "action": None
@@ -356,7 +364,7 @@ def main():
             "Income_Tax": {
                 "purchase_price": 60,
                 "position": 60,
-                "rent": 60,
+                "rent": [5, 20, 60, 180, 320, 450],
                 "owner": 60,
                 "tax": False,
                 "action": None
