@@ -49,8 +49,8 @@ def main():
                 "position": 1,
                 "rent": [2, 10, 30, 90, 160, 250], # based on house count, -2 = hotel, -1 = mortgage [0 houses, 1 houses, ...]
                 "owner": None,
-                "action": None
-                "group": "brown",
+                "action": None,
+                "group": "brown"
             },
             "Comm Chest_0": {
                 "purchase_price": 60,
@@ -217,7 +217,7 @@ def main():
             "position": 22,
             "rent": [5, 20, 60, 180, 320, 450],
             "owner": None,
-            "group": None
+            "group": None,
             "action": None
         },
         "Indiana Avenue": {
@@ -241,7 +241,7 @@ def main():
                 "position": 25,
                 "rent": [25, 50, 100, 200],
                 "owner": None,
-                "group": None
+                "group": None,
                 "action": None
             },
             "Atlantic Avenue": {
@@ -265,7 +265,7 @@ def main():
                 "position": 28,
                 "rent": [5, 20, 60, 180, 320, 450],
                 "owner": None,
-                "group": None
+                "group": None,
                 "action": None
             },
             "Marvin Gardens": {
