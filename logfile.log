@@ -68,3 +68,17 @@
     'position': 3,
     'purchase_price': 60,
     'rent': [4, 20, 60, 180, 320, 450, 30]}
+2022-07-29 21:48:12,650 : INFO :   [3, 3]
+2022-07-29 21:48:12,651 : INFO :   11
+2022-07-29 21:48:12,651 : INFO :   {   'action': None,
+    'group': 'brown',
+    'owner': None,
+    'position': 1,
+    'purchase_price': 60,
+    'rent': [2, 10, 30, 90, 160, 250]}
+2022-07-29 21:48:12,652 : INFO :   {   'action': None,
+    'group': 'brown',
+    'owner': None,
+    'position': 3,
+    'purchase_price': 60,
+    'rent': [4, 20, 60, 180, 320, 450, 30]}
