@@ -54,9 +54,10 @@ def main():
             },
             "Comm Chest_0": {
                 "purchase_price": 60,
-                "position": 5,
+                "position": 2,
                 "rent": [4, 20, 60, 180, 320, 450],
                 "owner": None,
+                "group": None,
                 "action": None
             },
             "Baltic Avenue": {
@@ -71,6 +72,7 @@ def main():
                 "purchase_price": None,
                 "position": 4,
                 "owner": None,
+                "group": None,
                 "tax": True,
                 "tax_amount": 200,
                 "action": "pay_tax"
@@ -96,7 +98,7 @@ def main():
                 "position": 7,
                 "rent": [5, 20, 60, 180, 320, 450],
                 "owner": None,
-                "group": "",
+                "group": None,
                 "action": None
             },
             "Vermont Avenue": {
@@ -120,7 +122,7 @@ def main():
                 "position": 10,
                 "rent": [5, 20, 60, 180, 320, 450],
                 "owner": None,
-                "group": "",
+                "group": None,
                 "action": None
             },
         "St. Charles Place": {
@@ -136,7 +138,7 @@ def main():
                 "position": 12,
                 "rent": [5, 20, 60, 180, 320, 450],
                 "owner": None,
-                "group": "",
+                "group": None,
                 "action": None
             },
             "States Avenue": {
@@ -177,7 +179,7 @@ def main():
             "position": 17,
             "rent": [5, 20, 60, 180, 320, 450],
             "owner": None,
-            "group": "",
+            "group": None,
             "action": None
         },
             "Tennessee Avenue": {
@@ -241,7 +243,7 @@ def main():
                 "position": 25,
                 "rent": [25, 50, 100, 200],
                 "owner": None,
-                "group": None,
+                "group": "railroad",
                 "action": None
             },
             "Atlantic Avenue": {
@@ -285,7 +287,7 @@ def main():
             },
             "Pacific Avenue": {
                 "purchase_price": 300,
-                "position": 60,
+                "position": 31,
                 "rent": [26, 130, 390, 900, 1100, 1275, 150],
                 "owner": None,
                 "group": "green",
@@ -293,7 +295,7 @@ def main():
             },
             "North Carolina Avenue": {
                 "purchase_price": 300,
-                "position": 60,
+                "position": 32,
                 "rent": [26, 130, 390, 900, 1100, 1275, 150],
                 "owner": None,
                 "group": "green",
@@ -301,7 +303,7 @@ def main():
             },
         "Comm Chest_3": {
             "purchase_price": 60,
-            "position": 60,
+            "position": 33,
             "rent": [5, 20, 60, 180, 320, 450],
             "owner": None,
             "group": None,
@@ -309,7 +311,7 @@ def main():
         },
             "Pennsylvania Avenue": {
                 "purchase_price": 320,
-                "position": 60,
+                "position": 34,
                 "rent": [28, 150, 450, 1000, 1200, 1400, 160],
                 "owner": None,
                 "group": "green",
@@ -320,12 +322,12 @@ def main():
                 "position": 35,
                 "rent": [25, 50, 100, 200],
                 "owner": None,
-                "group": None,
+                "group": "railroad",
                 "action": None
             },
         "Chance_3": {
             "purchase_price": 60,
-            "position": 60,
+            "position": 36,
             "rent": [5, 20, 60, 180, 320, 450],
             "owner": None,
             "group": None,
@@ -333,7 +335,7 @@ def main():
         },
         "Park Place": {
                 "purchase_price": 350,
-                "position": 38,
+                "position": 37,
                 "rent": [35, 175, 500, 1100, 1300, 1500, 175],
                 "owner": None,
                 "group": "blue",
@@ -341,7 +343,7 @@ def main():
             },
             "Luxury_tax": {
                 "purchase_price": 60,
-                "position": 60,
+                "position": 38,
                 "rent": [5, 20, 60, 180, 320, 450],
                 "owner": None,
                 "tax": True,
