@@ -47,18 +47,33 @@ def main():
             "Mediterranean Avenue": {
                 "purchase_price": 60,
                 "position": 1,
-                "rent": [2, 10, 30, 90, 160, 250], # based on house count, -2 = hotel, -1 = mortgage [0 houses, 1 houses, ...]
+                "rent": [2, 10, 30, 90, 160, 250, 30], # based on house count, -2 = hotel, -1 = mortgage [0 houses, 1 houses, ...]
                 "owner": None,
                 "action": None,
                 "group": "brown"
             },
             "Comm Chest_0": {
-                "purchase_price": 60,
+                "purchase_price": None,
                 "position": 2,
-                "rent": [4, 20, 60, 180, 320, 450],
+                "rent": None,
                 "owner": None,
                 "group": None,
-                "action": None
+                "action": {1:"Advance to Go, collect $200",
+                2:"Bank error in your favor, collect $200",
+                3:"Doctors fee. Pay $50",
+                4:"From sale of stock you get $50",
+                5:"Get Out of Jail Free",
+                6:"Go to Jail. Go directly to jail, do not pass Go, do not collect $200",
+                7:"Holiday fund matures. Receive $100",
+                8:"Income tax refund. Collect $20",
+                9:"It is your birthday. Collect $10 from every player",
+                10:"Life insurance matures. Collect $100",
+                11:"Pay hospital fees of $100",
+                12:"Pay school fees of $50",
+                13:"Receive $25 consultancy fee",
+                14:"You are assessed for street repair. $40 per house. $115 per hotel",
+                15:"You have won second prize in a beauty contest. Collect $10",
+                16:"You inherit $100"}
             },
             "Baltic Avenue": {
                 "purchase_price": 60,
@@ -96,10 +111,25 @@ def main():
             "Chance_0": {
                 "purchase_price": None,
                 "position": 7,
-                "rent": [5, 20, 60, 180, 320, 450],
+                "rent": None,
                 "owner": None,
                 "group": None,
-                "action": None
+                "action": {1:"Advance to Boardwalk",
+                2:"Advance to Go, collect $200",
+                3:"Advance to Illinois Avenue. If you pass Go, collect $200",
+                4:"Advance to St. Charles Place. If you pass Go, collect $200",
+                5:"Advance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay wonder twice the rental to which they are otherwise entitled",
+                6:"Advance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay wonder twice the rental to which they are otherwise entitled",
+                7:"Advance token to nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total ten times amount thrown.",
+                8:"Bank pays you dividend of $50",
+                9:"Get Out of Jail Free",
+                10:"Go Back 3 Spaces",
+                11:"Go to Jail. Go directly to Jail, do not pass Go, do not collect $200",
+                12:"Make general repairs on all your property. For each house pay $25. For each hotel pay $100",
+                13:"Speeding fine $15",
+                14:"Take a trip to Reading Railroad. If you pass Go, collect $200",
+                15:"You have been elected Chairman of the Board. Pay each player $50",
+                16:"Your building loan matures. Collect $150"}
             },
             "Vermont Avenue": {
                 "purchase_price": 100,
@@ -118,9 +148,9 @@ def main():
                 "action": None
             },
             "Jail": {
-                "purchase_price": 60,
+                "purchase_price": None,
                 "position": 10,
-                "rent": [5, 20, 60, 180, 320, 450],
+                "rent": None,
                 "owner": None,
                 "group": None,
                 "action": None
@@ -134,9 +164,9 @@ def main():
                 "action": None
             },
             "Electric Company": {
-                "purchase_price": 60,
+                "purchase_price": 150,
                 "position": 12,
-                "rent": [5, 20, 60, 180, 320, 450],
+                "rent": [5, 20, 60, 180, 320, 450], #rent should be equal to dice roll times 4?
                 "owner": None,
                 "group": None,
                 "action": None
@@ -175,12 +205,27 @@ def main():
                 "action": None
             },
         "Comm Chest_2": {
-            "purchase_price": 60,
+            "purchase_price": None,
             "position": 17,
-            "rent": [5, 20, 60, 180, 320, 450],
+            "rent": None,
             "owner": None,
             "group": None,
-            "action": None
+            "action": {1:"Advance to Go, collect $200",
+                2:"Bank error in your favor, collect $200",
+                3:"Doctors fee. Pay $50",
+                4:"From sale of stock you get $50",
+                5:"Get Out of Jail Free",
+                6:"Go to Jail. Go directly to jail, do not pass Go, do not collect $200",
+                7:"Holiday fund matures. Receive $100",
+                8:"Income tax refund. Collect $20",
+                9:"It is your birthday. Collect $10 from every player",
+                10:"Life insurance matures. Collect $100",
+                11:"Pay hospital fees of $100",
+                12:"Pay school fees of $50",
+                13:"Receive $25 consultancy fee",
+                14:"You are assessed for street repair. $40 per house. $115 per hotel",
+                15:"You have won second prize in a beauty contest. Collect $10",
+                16:"You inherit $100"}
         },
             "Tennessee Avenue": {
                 "purchase_price": 180,
@@ -215,12 +260,27 @@ def main():
                 "action": None
             },
         "Chance_2": {
-            "purchase_price": 60,
+            "purchase_price": None,
             "position": 22,
-            "rent": [5, 20, 60, 180, 320, 450],
+            "rent": None,
             "owner": None,
             "group": None,
-            "action": None
+            "action": {1:"Advance to Boardwalk",
+                2:"Advance to Go, collect $200",
+                3:"Advance to Illinois Avenue. If you pass Go, collect $200",
+                4:"Advance to St. Charles Place. If you pass Go, collect $200",
+                5:"Advance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay wonder twice the rental to which they are otherwise entitled",
+                6:"Advance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay wonder twice the rental to which they are otherwise entitled",
+                7:"Advance token to nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total ten times amount thrown.",
+                8:"Bank pays you dividend of $50",
+                9:"Get Out of Jail Free",
+                10:"Go Back 3 Spaces",
+                11:"Go to Jail. Go directly to Jail, do not pass Go, do not collect $200",
+                12:"Make general repairs on all your property. For each house pay $25. For each hotel pay $100",
+                13:"Speeding fine $15",
+                14:"Take a trip to Reading Railroad. If you pass Go, collect $200",
+                15:"You have been elected Chairman of the Board. Pay each player $50",
+                16:"Your building loan matures. Collect $150"}
         },
         "Indiana Avenue": {
                 "purchase_price": 220,
@@ -263,9 +323,9 @@ def main():
                 "action": None
             },
             "Water Works": {
-                "purchase_price": 60,
+                "purchase_price": 150,
                 "position": 28,
-                "rent": [5, 20, 60, 180, 320, 450],
+                "rent": [5, 20, 60, 180, 320, 450], #rent should be dice times 4?
                 "owner": None,
                 "group": None,
                 "action": None
@@ -302,12 +362,27 @@ def main():
                 "action": None
             },
         "Comm Chest_3": {
-            "purchase_price": 60,
+            "purchase_price": None,
             "position": 33,
-            "rent": [5, 20, 60, 180, 320, 450],
+            "rent": None,
             "owner": None,
             "group": None,
-            "action": None
+            "action": {1:"Advance to Go, collect $200",
+                2:"Bank error in your favor, collect $200",
+                3:"Doctors fee. Pay $50",
+                4:"From sale of stock you get $50",
+                5:"Get Out of Jail Free",
+                6:"Go to Jail. Go directly to jail, do not pass Go, do not collect $200",
+                7:"Holiday fund matures. Receive $100",
+                8:"Income tax refund. Collect $20",
+                9:"It is your birthday. Collect $10 from every player",
+                10:"Life insurance matures. Collect $100",
+                11:"Pay hospital fees of $100",
+                12:"Pay school fees of $50",
+                13:"Receive $25 consultancy fee",
+                14:"You are assessed for street repair. $40 per house. $115 per hotel",
+                15:"You have won second prize in a beauty contest. Collect $10",
+                16:"You inherit $100"}
         },
             "Pennsylvania Avenue": {
                 "purchase_price": 320,
@@ -326,12 +401,27 @@ def main():
                 "action": None
             },
         "Chance_3": {
-            "purchase_price": 60,
+            "purchase_price": None,
             "position": 36,
-            "rent": [5, 20, 60, 180, 320, 450],
+            "rent": None,
             "owner": None,
             "group": None,
-            "action": None
+            "action": {1:"Advance to Boardwalk",
+                2:"Advance to Go, collect $200",
+                3:"Advance to Illinois Avenue. If you pass Go, collect $200",
+                4:"Advance to St. Charles Place. If you pass Go, collect $200",
+                5:"Advance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay wonder twice the rental to which they are otherwise entitled",
+                6:"Advance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay wonder twice the rental to which they are otherwise entitled",
+                7:"Advance token to nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total ten times amount thrown.",
+                8:"Bank pays you dividend of $50",
+                9:"Get Out of Jail Free",
+                10:"Go Back 3 Spaces",
+                11:"Go to Jail. Go directly to Jail, do not pass Go, do not collect $200",
+                12:"Make general repairs on all your property. For each house pay $25. For each hotel pay $100",
+                13:"Speeding fine $15",
+                14:"Take a trip to Reading Railroad. If you pass Go, collect $200",
+                15:"You have been elected Chairman of the Board. Pay each player $50",
+                16:"Your building loan matures. Collect $150"}
         },
         "Park Place": {
                 "purchase_price": 350,
@@ -342,9 +432,9 @@ def main():
                 "action": None
             },
             "Luxury_tax": {
-                "purchase_price": 60,
+                "purchase_price": None,
                 "position": 38,
-                "rent": [5, 20, 60, 180, 320, 450],
+                "rent": None,
                 "owner": None,
                 "tax": True,
                 "tax_amount": 100,
@@ -368,7 +458,7 @@ def main():
     logger.info(roll(rounds=0))
 
     logger.info(pformat(properties.get("Mediterranean Avenue"), indent=4))
-    logger.info(pformat(properties.get("Baltic Avenue"), indent=4))
+    logger.info(pformat(properties.get("Comm Chest_3"), indent=4))
 
 
 
