@@ -1,3 +1,4 @@
+from concurrent.futures.process import _ExceptionWithTraceback
 from random import randrange, choice
 import logging
 from pprint import pformat
@@ -27,6 +28,45 @@ logger.addHandler(file_handler)
 # logger.error('A Major error has happened.')
 # logger.critical('Fatal error. Cannot continue')
 
+players = [] #where the players will be added
+
+#gets how many players are playing, no more than 7, no less than 2, throws error message if input is something other than an integer
+while True:
+    try:
+        player_count = int(input('How many players are playing today?: '))
+       #collects and appends player names to players list
+        if player_count >= 2 and player_count <= 7:
+            if player_count >= 2:
+                player1 = input('Player 1: ')
+                players.append(player1)
+                player2 = input('Player 2: ')
+                players.append(player2)
+            if player_count >= 3:
+                player3 = input('Player 3: ')
+                players.append(player3)
+            if player_count >= 4:
+                player4 = input('Player 4: ')
+                players.append(player4)
+            if player_count >= 5:
+                player5 = input('Player 5: ')
+                players.append(player5)
+            if player_count >= 6:
+                player6 = input('Player 6: ')
+                players.append(player6)
+            if player_count == 7:
+                player7 = input('Player 7: ')
+                players.append(player7)
+            break
+        elif player_count < 2:
+            print('Error occured, you need at least 2 players to play, please try again')
+        elif player_count > 7:
+                print('Error, you cannot have more than 7 players')
+    except:
+        print('Error occured, please try again')
+
+current_position = [0,0,0,0,0,0,0]  #where they currently are on the board
+current_balance = [1500,1500,1500,1500,1500,1500,1500]  #how much money held currently
+properties_owned = [[],[],[],[],[],[],[]] #Where properties owned will be stored
 
 def roll(rounds):
     dice = randrange(2, 12)
@@ -34,6 +74,7 @@ def roll(rounds):
     if rounds > 0:
         return [dice, speed_die]
     return dice
+
 
 def get_property(name):
     ...
@@ -44,6 +85,14 @@ def get_user_balance(user):
 
 def main():
     properties = {
+            "Go": {
+                "purchase_price": None,
+                "position": 0,
+                "rent": None,
+                "owner": None,
+                "action": "collect $200",
+                "group": None
+            },
             "Mediterranean Avenue": {
                 "purchase_price": 60,
                 "position": 1,
@@ -453,7 +502,8 @@ def main():
 
 
     }
-
+    logger.info(player_count)
+    logger.info(players)
     logger.info(roll(rounds=1))
     logger.info(roll(rounds=0))
 
